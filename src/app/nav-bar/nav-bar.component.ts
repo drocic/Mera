@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
+  
+  status: boolean = false;
+  clicEvent(){
+    this.status = !this.status;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
