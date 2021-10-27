@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { GoogleChartsModule } from 'angular-google-charts';
 
 import { appRoutingModule } from './app.routing'
 import { AppComponent } from './app.component';
@@ -7,7 +9,6 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './skills/skills.component';
 import { StaticComponent } from './static/static.component';
-import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     appRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    GoogleChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

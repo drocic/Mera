@@ -1,1 +1,20 @@
-<p>skills works!</p>
+<div class="col-12 col-sm-6 col-md-8 justify-content-end skill-list row">
+    <h4>Skill list</h4>
+    <table id="skills">
+        <tr>
+          <th *ngFor="let col of columns">
+            {{col}}
+          </th>
+        </tr>
+        <tr *ngFor="let skill of skills">
+          <!-- <td *ngFor="let col of index">
+            {{skill[col]}}
+          </td> -->
+          <td>{{skill.skillname}}</td>
+          <td>{{skill.skillyear}}</td>
+          <td>{{skill.skillrat}}</td>
+          <td><i class="fa fa-edit" (click)="Update(skill.id)"></i><i class="fa fa-trash" (click)="Delete(skill.id)"></i></td>
+        </tr>
+      
+      </table>
+</div>

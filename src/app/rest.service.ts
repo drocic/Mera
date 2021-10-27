@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Skills } from './skills';
+import { GraphData } from './graph';
 
 @Injectable({
   providedIn: 'root'
@@ -14,5 +15,5 @@ export class RestService {
     getSkills() {
       return this.http.get<Skills[]>(this.url);
     }
-  
+      
 }
