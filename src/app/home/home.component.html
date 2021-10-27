@@ -9,19 +9,30 @@
                 <h4>Drocic</h4>
             </div>
         </div>
+        <div class="row contact">
+          <div class="col-8 col-md-6">
+            <h5>Contact</h5>
+            <p id="email"><i class="fa fa-envelope"></i><a href="mailto:drocic@yahoo.co.uk" target="_blank">drocic@yahoo.co.uk</a></p>
+            <p id="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/milutin-drocic/" target="_blank">/in/milutin-drocic</a></p>
+            <p id="github"><i class="fa fa-github"></i><a href="https://github.com/drocic" target="_blank">GitHub Drocic</a></p>
+          </div>
+        </div>
     </div>
-    <div class="col-12 col-sm-6 col-md-8">
+    <div class="col-12 col-sm-6 col-md-8 justify-content-end skill-list row">
         <h4>Skill list</h4>
         <table id="skills">
-            <!-- <tr>
+            <tr>
               <th *ngFor="let col of columns">
                 {{col}}
               </th>
-            </tr> -->
+            </tr>
             <tr *ngFor="let skill of skills">
-              <td *ngFor="let col of index">
+              <!-- <td *ngFor="let col of index">
                 {{skill[col]}}
-              </td>
+              </td> -->
+              <td>{{skill.skillname}}</td>
+              <td>{{skill.skillyear}}</td>
+              <td>{{skill.skillrat}}</td>
             </tr>
           
           </table>
@@ -30,6 +41,6 @@
 <div class="row">
     <div class="col-6 col-md-4">
         <h2>Heading 2</h2>
-        <p>Aliquip exercitation cupidatat pariatur amet.Incididunt aute ipsum eiusmod culpa ex ea magna ut proident laborum mollit labore velit ipsum. Veniam amet fugiat culpa magna laborum consectetur do ipsum commodo excepteur laboris ex. Velit enim aliquip in magna ea velit sunt sit anim nulla ipsum non eu aliqua. Cillum velit occaecat incididunt labore sit proident proident ut in et ad.</p>
+        
     </div>
 </div>

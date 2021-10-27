@@ -11,8 +11,8 @@ export class HomeComponent implements OnInit {
 
   constructor(private rs : RestService) { }
 
-  columns = ["ID","Skill Name","Skill Year Aquired","Skill Rating"];
-  index = ["id","skillname", "skillyear", "skillrat"];
+  columns = ["Skill Name","Skill Year Aquired","Skill Rating"];
+  index = ["skillname", "skillyear", "skillrat"];
 
   skills : Skills[] = [];
 

@@ -4,3 +4,23 @@
 img {
     border-radius: 50%;
 }
+.skill-list {
+    padding-left: 2em;
+}
+.skill-list>h4 {
+    padding-left: 0;
+}
+.contact {
+    padding-top: 2em;
+}
+#email,#linkedin,#github{
+    margin-bottom: 0.2rem;
+}
+.contact>div>p>a{
+    text-decoration: none;
+    color: #1AA260;
+    font-weight: 500;
+}
+i {
+    margin-right: 0.1em;
+}
