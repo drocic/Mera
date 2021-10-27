@@ -15,5 +15,9 @@ export class RestService {
     getSkills() {
       return this.http.get<Skills[]>(this.url);
     }
+
+  /*   delSkills() {
+      delete this.http
+    } */
       
 }
