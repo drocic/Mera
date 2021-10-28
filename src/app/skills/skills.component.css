@@ -1,0 +1,23 @@
+.skill-list {
+    padding-left: 2em;
+}
+.skill-list>h4 {
+    padding-left: 0;
+}
+.fa-trash {
+    color: #E50914;
+    margin-left: 0.5em;
+}
+.fa-edit {
+    color: #4285F4;
+}
+.form-control {
+    margin-bottom: 0.5em;
+}
+form {
+    padding-top: 2em;
+}
+#button-add {
+    width: 80px;
+    margin-top: 2em;
+}

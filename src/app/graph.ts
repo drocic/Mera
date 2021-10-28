@@ -1,11 +1,12 @@
 export class GraphData {
+    yeargraph:string
     skillcount:number
-    yeargraph:number
+    
 
-    constructor(skillcount: number, yeargraph: number)
+    constructor(yeargraph: string, skillcount: number)
     {
-        this.skillcount = skillcount;
         this.yeargraph = yeargraph;
+        this.skillcount = skillcount;
     }
 
 }

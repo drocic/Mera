@@ -1,20 +1,37 @@
-<div class="col-12 col-sm-6 col-md-8 justify-content-end skill-list row">
-    <h4>Skill list</h4>
-    <table id="skills">
-        <tr>
-          <th *ngFor="let col of columns">
-            {{col}}
-          </th>
-        </tr>
-        <tr *ngFor="let skill of skills">
-          <!-- <td *ngFor="let col of index">
-            {{skill[col]}}
-          </td> -->
-          <td>{{skill.skillname}}</td>
-          <td>{{skill.skillyear}}</td>
-          <td>{{skill.skillrat}}</td>
-          <td><i class="fa fa-edit" (click)="Update(skill.id)"></i><i class="fa fa-trash" (click)="Delete(skill.id)"></i></td>
-        </tr>
-      
-      </table>
+<div class="row">
+    <div class="col-12 col-sm-6 col-md-8 justify-content-start skill-list row">
+        <h4>Skill list</h4>
+        <table id="skills">
+            <tr>
+            <th *ngFor="let col of columns">
+                {{col}}
+            </th>
+            </tr>
+            <tr *ngFor="let skill of skills">
+            <!-- <td *ngFor="let col of index">
+                {{skill[col]}}
+            </td> -->
+            <td>{{skill.skillname}}</td>
+            <td>{{skill.skillyear}}</td>
+            <td>{{skill.skillrat}}</td>
+            <td id="edit-delete"><i class="fa fa-edit" (click)="Update(skill.id)"></i><i class="fa fa-trash" (click)="Delete(skill.id)"></i></td>
+            </tr>
+        </table>
+        <button type="button" class="btn btn-primary" id="button-add" (click)="AddRecord()">Add</button>
+    </div>
+    <div class="col-6 col-md-4">
+        <form>
+            <fieldset #updateform disabled>
+            <div class="form-group">
+                <label for="SkillNameInput">Skill Name</label>
+                <input type="text" #SkillNameInput class="form-control" placeholder="Disabled input">
+                <label for="SkillYearInput">Skill Year Aquired</label>
+                <input type="text" #SkillYearInput class="form-control" placeholder="Disabled input">
+                <label for="SkillRatingInput">Skill Rating</label>
+                <input type="text" #SkillRatingInput class="form-control" placeholder="Disabled input">
+            </div>
+            <button type="button" class="btn btn-primary" (click)="Submit()">Submit</button>
+            </fieldset>
+        </form>
+    </div>
 </div>

@@ -9,3 +9,7 @@ nav {
     text-transform: uppercase;
     font-weight: 500;
 }
+.show {
+    justify-content: center!important;
+    display: flex;
+}
