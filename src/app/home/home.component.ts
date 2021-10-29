@@ -65,8 +65,8 @@ export class HomeComponent implements OnInit {
        title: 'Skill'
     },
  },
- width: 1000,
- height: 400
+ width: 500,
+ height: 300
 };
 
 }
